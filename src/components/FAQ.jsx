@@ -10,7 +10,7 @@ export default function FAQ() {
     <section className="bg-white">
       <div className="mx-auto max-w-3xl px-5 py-20">
         <p className="text-center font-mono text-xs uppercase tracking-[0.2em] text-gold-600">FAQ</p>
-        <h2 className="mt-3 text-center font-display text-3xl text-navy-900 sm:text-4xl">
+        <h2 className="mt-3 text-center font-display text-3xl text-navy-600 sm:text-4xl">
           Questions we hear most
         </h2>
 

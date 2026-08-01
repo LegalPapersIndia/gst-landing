@@ -307,10 +307,10 @@ export default function LeadForm({ variant = "card" }) {
       )}
       {error && <p className="mt-3 text-xs text-red-600">{error}</p>}
 
-      <motion.button
+     <motion.button
         whileTap={{ scale: 0.98 }}
         type="submit"
-        className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-900 px-5 py-3.5 text-sm font-semibold text-paper transition hover:bg-navy-800"
+        className="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-navy-600 px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-navy-700"
       >
         Get free consultation
         <ArrowRight className="h-4 w-4" />

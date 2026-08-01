@@ -124,3 +124,56 @@ export const businessTypes = [
   "One Person Company",
   "Other",
 ];
+
+
+export const pricingPlans = [
+  {
+    name: "Basic",
+    desc: "For a new business idea with low investment.",
+    originalPrice: "1,999",
+    discount: "50% off",
+    price: "999",
+    features: ["GST application draft in 1 day", "Dedicated advisor for GST", "Free GST billing software"],
+  },
+  {
+    name: "Standard",
+    desc: "Stay stress-free on GST returns and compliance as you scale.",
+    originalPrice: "11,999",
+    discount: "50% off",
+    price: "5,999",
+    highlight: true,
+    features: [
+      "Everything in Basic",
+      "MSME (Udyam) certificate",
+      "GST return filing — 1 year",
+      "Monthly return updates",
+    ],
+  },
+  {
+    name: "Premium",
+    desc: "Everything to launch and scale, with an online presence from day one.",
+    originalPrice: "29,999",
+    discount: "50% off",
+    price: "14,999",
+    features: ["Everything in Standard", "ISO certificate", "Website + hosting", "Logo & stationery design"],
+  },
+];
+
+export const whoNeedsGst = [
+  {
+    title: "Turnover crosses the limit",
+    desc: "₹40 lakh for goods, ₹20 lakh for services (₹10 lakh in special category states).",
+  },
+  {
+    title: "Selling on e-commerce",
+    desc: "Amazon, Flipkart, Meesho or any marketplace seller needs GST regardless of turnover.",
+  },
+  {
+    title: "Inter-state supply",
+    desc: "Selling goods or services across state lines requires registration from day one.",
+  },
+  {
+    title: "Voluntary registration",
+    desc: "Below threshold but want to claim input tax credit or look more credible to B2B buyers.",
+  },
+];

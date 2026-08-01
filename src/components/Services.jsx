@@ -44,6 +44,7 @@
 // }
 
 
+
 import { motion } from "framer-motion";
 import { FileText } from "lucide-react";
 import { services } from "../data";
@@ -54,7 +55,7 @@ export default function Services() {
       <div className="mx-auto max-w-6xl px-5 py-20">
         <div className="max-w-xl">
           <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold-600">Tax & GST services</p>
-          <h2 className="mt-3 font-display text-3xl text-navy-900 sm:text-4xl">
+          <h2 className="mt-3 font-display text-3xl text-navy-600 sm:text-4xl">
             Everything under GST, handled in one place
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-500">
@@ -98,3 +99,5 @@ export default function Services() {
     </section>
   );
 }
+
+
