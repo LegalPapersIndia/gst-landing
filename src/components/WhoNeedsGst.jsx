@@ -11,7 +11,7 @@ export default function WhoNeedsGst() {
             <HelpCircle className="h-5 w-5 text-seal" strokeWidth={1.5} />
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold-600">Not sure if you need it?</p>
           </div>
-          <h2 className="mt-3 font-display text-3xl text-navy-900 sm:text-4xl">Who needs GST registration</h2>
+          <h2 className="mt-3 font-display text-3xl text-navy-600 sm:text-4xl">Who needs GST registration</h2>
           <p className="mt-3 text-sm leading-relaxed text-slate-500">
             Any one of these applies to you? You're required — or better off — registering for GST.
           </p>

@@ -11,7 +11,7 @@ export default function WhyUsAndDocuments() {
             <ShieldCheck className="h-5 w-5 text-seal" strokeWidth={1.5} />
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold-600">Why Legal Papers India</p>
           </div>
-          <h2 className="mt-3 font-display text-2xl text-navy-900 sm:text-3xl">
+          <h2 className="mt-3 font-display text-2xl text-navy-600 sm:text-3xl">
             The details that stall an application
           </h2>
           <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -35,7 +35,7 @@ export default function WhyUsAndDocuments() {
             <FileCheck2 className="h-5 w-5 text-seal" strokeWidth={1.5} />
             <p className="font-mono text-xs uppercase tracking-[0.2em] text-gold-600">Keep ready</p>
           </div>
-          <h2 className="mt-3 font-display text-2xl text-navy-900 sm:text-3xl">Documents you'll need</h2>
+          <h2 className="mt-3 font-display text-2xl text-navy-600 sm:text-3xl">Documents you'll need</h2>
           <ul className="mt-8 divide-y divide-navy-900/8 overflow-hidden rounded-xl border border-navy-900/10">
             {documentsRequired.map((doc, i) => (
               <motion.li
