@@ -88,11 +88,11 @@ export default function Footer() {
             <span className="font-display text-2xl font-bold text-gold-500">india</span>
             <span className="font-display text-2xl font-bold text-ink">.com</span>
           </div>
-          <div className="mt-1 flex items-center justify-center gap-3 sm:justify-start">
-            <span className="h-px w-10 bg-slate-400/50" />
-            <p className="text-[11px] text-slate-500">Get Business Papers Ready</p>
-            <span className="h-px w-10 bg-slate-400/50" />
-            <p className="text-[11px] font-semibold text-ink">GROUP</p>
+          <div className="mt-1 flex w-full items-center gap-2">
+            <span className="h-px flex-1 bg-slate-400/50" />
+            <p className="whitespace-nowrap text-[11px] text-ink">Get Business Papers Ready</p>
+            <span className="h-px flex-1 bg-slate-400/50" />
+            <p className="whitespace-nowrap text-[11px] font-semibold text-ink">GROUP</p>
           </div>
         </div>
 
