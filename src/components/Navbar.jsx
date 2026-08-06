@@ -12,10 +12,10 @@ export default function Navbar() {
               Legalpapers
             </span>
             <span className="font-display text-xl font-bold text-gold-500 sm:text-2xl">
-              india
+              india.
             </span>
             <span className="font-display text-xl font-bold text-ink sm:text-2xl">
-              .com
+              com
             </span>
           </div>
 
