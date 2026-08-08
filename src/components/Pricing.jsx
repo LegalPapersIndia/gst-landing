@@ -197,7 +197,7 @@ export default function Pricing() {
 
           <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
             Pick a plan that fits
-            <span className="block text-blue-700">
+            <span className="block text-blue-600">
               your business
             </span>
           </h2>

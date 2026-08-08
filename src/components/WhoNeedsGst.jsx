@@ -541,7 +541,7 @@ export default function WhoNeedsGst() {
             >
               <h3 className="font-display text-2xl font-bold leading-tight text-black sm:text-3xl">
                 Get your GST registration
-                <span className="block text-blue-700">
+                <span className="block text-blue-600">
                   without the hassle.
                 </span>
               </h3>
