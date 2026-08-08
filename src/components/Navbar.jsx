@@ -8,20 +8,20 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-5 sm:py-3.5">
         <div className="min-w-0">
           <div className="flex items-baseline gap-0.5 whitespace-nowrap">
-            <span className="font-display text-xl font-bold text-navy-600 sm:text-2xl">
+            <span className="font-display text-xl font-bold text-navy-600 sm:text-3xl">
               Legalpapers
             </span>
-            <span className="font-display text-xl font-bold text-gold-500 sm:text-2xl">
+            <span className="font-display text-xl font-bold text-gold-500 sm:text-3xl">
               india.
             </span>
-            <span className="font-display text-xl font-bold text-ink sm:text-2xl">
+            <span className="font-display text-xl font-bold text-ink sm:text-3xl">
               com
             </span>
           </div>
 
            <div className="mt-0.5 flex w-full items-center gap-2">
             <span className="h-px flex-1 bg-slate-400/50" />
-            <p className="whitespace-nowrap text-[11px] text-ink">Get Business Papers Ready</p>
+            <p className="whitespace-nowrap text-[12px] text-ink">Get Business Papers Ready</p>
             <span className="h-px flex-1 bg-slate-400/50" />
             <p className="whitespace-nowrap text-[11px] font-semibold text-ink">GROUP</p>
           </div>

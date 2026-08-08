@@ -104,6 +104,69 @@
 
 
 
+// import { motion } from "framer-motion";
+// import {
+//   FaBriefcase,
+//   FaStar,
+//   FaMapMarkedAlt,
+//   FaHeadset,
+// } from "react-icons/fa";
+// import { stats } from "../data";
+
+// const statIcons = [FaBriefcase, FaStar, FaMapMarkedAlt, FaHeadset];
+
+// export default function TrustStrip() {
+//   return (
+//     <section className="border-y border-navy-900/10 bg-white">
+//       <div className="mx-auto max-w-6xl px-5 py-14">
+//         <div className="mb-8">
+//           <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
+//             Why businesses trust us
+//           </p>
+
+//           <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-black sm:text-4xl">
+//             Numbers that speak for themselves
+//           </h2>
+//         </div>
+
+//         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+//           {stats.map((s, i) => {
+//             const Icon = statIcons[i % statIcons.length];
+
+//             return (
+//               <motion.div
+//                 key={s.label}
+//                 initial={{ opacity: 0, y: 16 }}
+//                 whileInView={{ opacity: 1, y: 0 }}
+//                 viewport={{ once: true }}
+//                 transition={{ duration: 0.45, delay: i * 0.08 }}
+//                 className="group relative overflow-hidden rounded-xl border border-navy-900/10 bg-navy-500/5 px-4 py-7 text-center transition duration-300 hover:-translate-y-1 hover:border-navy-600/20 hover:bg-white hover:shadow-[0_20px_45px_-25px_rgba(10,20,40,0.4)]"
+//               >
+//                 <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-gold-500/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-gold-500">
+//                   <Icon className="h-5 w-5 text-gold-600 transition-colors duration-500 group-hover:text-white" />
+//                 </div>
+
+//                 <p className="mt-3 font-mono text-2xl font-bold text-black sm:text-3xl">
+//                   {s.value}
+//                 </p>
+
+//                 <p className="mt-2 font-display text-base font-medium text-black sm:text-lg">
+//                   {s.label}
+//                 </p>
+
+//                 <div className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-gold-500 transition-transform duration-500 group-hover:scale-x-100" />
+//               </motion.div>
+//             );
+//           })}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
+
+
+
+
 import { motion } from "framer-motion";
 import {
   FaBriefcase,
@@ -117,17 +180,37 @@ const statIcons = [FaBriefcase, FaStar, FaMapMarkedAlt, FaHeadset];
 
 export default function TrustStrip() {
   return (
-    <section className="border-y border-navy-900/10 bg-white">
-      <div className="mx-auto max-w-6xl px-5 py-14">
-        <div className="mb-8">
-          <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
+    <section className="relative overflow-hidden border-y border-navy-900/10 bg-navy-600">
+      {/* Dotted texture */}
+      <div
+        className="pointer-events-none absolute inset-0 opacity-[0.5]"
+        style={{
+          backgroundImage:
+            "radial-gradient(rgba(255,255,255,0.14) 1px, transparent 1px)",
+          backgroundSize: "20px 20px",
+        }}
+      />
+
+      {/* Decorative glows */}
+      <div className="pointer-events-none absolute -left-20 -top-24 h-72 w-72 rounded-full bg-gold-500/15 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 -right-16 h-72 w-72 rounded-full bg-white/5 blur-3xl" />
+
+      <div className="relative mx-auto max-w-6xl px-5 py-14 sm:py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="mb-8"
+        >
+          <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-500">
             Why businesses trust us
           </p>
 
-          <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-black sm:text-4xl">
+          <h2 className="mt-2 font-display text-3xl font-bold leading-tight text-white sm:text-4xl">
             Numbers that speak for themselves
           </h2>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
           {stats.map((s, i) => {
@@ -136,25 +219,34 @@ export default function TrustStrip() {
             return (
               <motion.div
                 key={s.label}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: i * 0.08 }}
-                className="group relative overflow-hidden rounded-xl border border-navy-900/10 bg-navy-500/5 px-4 py-7 text-center transition duration-300 hover:-translate-y-1 hover:border-navy-600/20 hover:bg-white hover:shadow-[0_20px_45px_-25px_rgba(10,20,40,0.4)]"
+                initial={{ opacity: 0, y: 24, scale: 0.94 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ y: -8, scale: 1.03 }}
+                className="group relative overflow-hidden rounded-2xl border border-transparent bg-white px-4 py-7 text-center shadow-[0_20px_45px_-25px_rgba(10,20,40,0.5)] transition-shadow duration-500 hover:shadow-[0_30px_60px_-20px_rgba(10,20,40,0.35)]"
               >
-                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-gold-500/10 transition-all duration-500 group-hover:scale-110 group-hover:bg-gold-500">
-                  <Icon className="h-5 w-5 text-gold-600 transition-colors duration-500 group-hover:text-white" />
-                </div>
+                {/* Radial glow that grows on hover, stays behind content */}
+                <div className="pointer-events-none absolute left-1/2 top-1/2 h-0 w-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold-500/15 blur-2xl transition-all duration-500 group-hover:h-44 group-hover:w-44" />
 
-                <p className="mt-3 font-mono text-2xl font-bold text-black sm:text-3xl">
+                <motion.div
+                  className="relative mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-gold-500/10 ring-1 ring-gold-500/15"
+                  whileHover={{ rotate: [0, -10, 10, -5, 0], scale: 1.15 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Icon className="h-5 w-5 text-gold-600" />
+                </motion.div>
+
+                <p className="relative mt-3 font-mono text-2xl font-bold text-black sm:text-3xl">
                   {s.value}
                 </p>
 
-                <p className="mt-2 font-display text-base font-medium text-black sm:text-lg">
+                <p className="relative mt-2 font-display text-base font-medium text-black sm:text-lg">
                   {s.label}
                 </p>
 
-                <div className="absolute bottom-0 left-0 h-1 w-full origin-left scale-x-0 bg-gold-500 transition-transform duration-500 group-hover:scale-x-100" />
+                {/* Bottom accent line grows on hover */}
+                <div className="absolute bottom-0 left-0 h-[3px] w-full origin-left scale-x-0 bg-gradient-to-r from-gold-500/0 via-gold-500 to-gold-500/0 transition-transform duration-500 group-hover:scale-x-100" />
               </motion.div>
             );
           })}
@@ -163,4 +255,3 @@ export default function TrustStrip() {
     </section>
   );
 }
-

@@ -170,13 +170,13 @@ export default function Footer() {
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row">
         <div>
           <div className="flex items-baseline justify-center gap-0.5 sm:justify-start">
-            <span className="font-display text-2xl font-bold text-navy-600">
+            <span className="font-display text-3xl font-bold text-navy-600">
               Legalpapers
             </span>
-            <span className="font-display text-2xl font-bold text-gold-500">
+            <span className="font-display text-3xl font-bold text-gold-500">
               india.
             </span>
-            <span className="font-display text-2xl font-bold text-black">
+            <span className="font-display text-3xl font-bold text-black">
               com
             </span>
           </div>
@@ -184,7 +184,7 @@ export default function Footer() {
           <div className="mt-1 flex w-full items-center gap-2">
             <span className="h-px flex-1 bg-slate-400/50" />
 
-            <p className="whitespace-nowrap text-xs text-black">
+            <p className="whitespace-nowrap text-[12px] text-black">
               Get Business Papers Ready
             </p>
 

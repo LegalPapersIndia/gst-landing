@@ -66,27 +66,21 @@ export const whyUs = [
 export const reviewPlatforms = [
   {
     name: "Google Reviews",
-    rating: "4.8",
+    rating: "4.9",
     count: "2,000+ reviews",
     href: "https://share.google/1MYy6yASxWRMA1ZPa",
-    quote: "Replace with a real short excerpt from a Google review.",
-    author: "Placeholder — reviewer name",
   },
   {
     name: "Trustpilot",
-    rating: "4.7",
+    rating: "4.9",
     count: "500+ reviews",
     href: "https://www.trustpilot.com/review/legalpapersindia.com",
-    quote: "Replace with a real short excerpt from a Trustpilot review.",
-    author: "Placeholder — reviewer name",
   },
   {
-    name: "AmbitionBox",
-    rating: "4.5",
+    name: "Mouthshut",
+    rating: "4.9",
     count: "100+ reviews",
-    href: "https://www.ambitionbox.com/reviews/legal-papers-india-reviews",
-    quote: "Replace with a real short excerpt from an AmbitionBox review.",
-    author: "Placeholder — reviewer name",
+    href: "https://www.mouthshut.com/product-reviews/legalpapersindia-reviews-926198492",
   },
 ];
 
@@ -126,36 +120,146 @@ export const businessTypes = [
 ];
 
 
+// export const pricingPlans = [
+//   {
+//     name: "Basic",
+//     desc: "For a new business idea with low investment.",
+//     originalPrice: "1,999",
+//     discount: "50% off",
+//     price: "999",
+//     features: ["GST application draft in 1 day", "Dedicated advisor for GST", "Free GST billing software"],
+//   },
+//   {
+//     name: "Standard",
+//     desc: "Stay stress-free on GST returns and compliance as you scale.",
+//     originalPrice: "11,999",
+//     discount: "50% off",
+//     price: "5,999",
+//     highlight: true,
+//     features: [
+//       "Everything in Basic",
+//       "MSME (Udyam) certificate",
+//       "GST return filing — 1 year",
+//       "Monthly return updates",
+//     ],
+//   },
+//   {
+//     name: "Premium",
+//     desc: "Everything to launch and scale, with an online presence from day one.",
+//     originalPrice: "29,999",
+//     discount: "50% off",
+//     price: "14,999",
+//     features: ["Everything in Standard", "ISO certificate", "Website + hosting", "Logo & stationery design"],
+//   },
+// ];
+
+
+
 export const pricingPlans = [
   {
     name: "Basic",
-    desc: "For a new business idea with low investment.",
+
+    desc: "For new business idea with low investment.",
+
     originalPrice: "1,999",
     discount: "50% off",
     price: "999",
-    features: ["GST application draft in 1 day", "Dedicated advisor for GST", "Free GST billing software"],
+
+    govtFee: "+ Govt. Fee (to be paid later)",
+
+    lowPriceTitle: "Lowest Cost first time ever",
+    lowPriceDesc:
+      "We offer competitive professional fees without compromising on quality",
+
+    instantTitle: "Instant 999 less",
+    instantDesc:
+      "Available for 24 hours to do fast checkout process and unlock your offer.",
+
+    emi: false,
+
+    highlight: false,
+
+    featuresTitle: "What you'll get",
+
+    features: [
+      "GST Application Draft in 1 Day",
+      "Dedicated Advisor for GST",
+      "Free GST Billing Software",
+    ],
   },
+
   {
     name: "Standard",
-    desc: "Stay stress-free on GST returns and compliance as you scale.",
+
+    desc:
+      "Perfact for Startup and scale and stress free from GST Returns compliances and updates.",
+
     originalPrice: "11,999",
     discount: "50% off",
     price: "5,999",
+
+    govtFee: "+ Govt. Fee (to be paid later)",
+
+    lowPriceTitle: "Lowest Cost first time ever",
+    lowPriceDesc:
+      "We offer competitive professional fees without compromising on quality",
+
+    instantTitle: "Instant 5999 less",
+    instantDesc:
+      "Available for 24 hours to do fast checkout process and unlock your offer.",
+
+    emi: false,
+
     highlight: true,
+
+    featuresTitle: "What you'll get",
+
     features: [
-      "Everything in Basic",
-      "MSME (Udyam) certificate",
-      "GST return filing — 1 year",
-      "Monthly return updates",
+      "Inclusive of Basic",
+      "MSME (Udyam Certificate)",
+      "GST Return - 1 Year",
+      "All Filling Records",
+      "Every Month Return Updates",
+      "Free GST Biling Software",
     ],
   },
+
   {
     name: "Premium",
-    desc: "Everything to launch and scale, with an online presence from day one.",
+
+    desc:
+      "Everthing that required to startup your business and scale & expansion with online presence from 1 day.",
+
     originalPrice: "29,999",
     discount: "50% off",
     price: "14,999",
-    features: ["Everything in Standard", "ISO certificate", "Website + hosting", "Logo & stationery design"],
+
+    govtFee: "+ Govt. Fee (to be paid later)",
+
+    lowPriceTitle: "Lowest Cost first time ever",
+    lowPriceDesc:
+      "We offer competitive professional fees without compromising on quality",
+
+    instantTitle: "Instant 14999 less",
+    instantDesc:
+      "Available for 24 hours to do fast checkout process and unlock your offer.",
+
+    emi: true,
+    emiText: "EMI options available.",
+
+    highlight: false,
+
+    featuresTitle: "What you'll get",
+
+    features: [
+      "Inclusive Of Standard",
+      "ISO Certificate",
+      "Website + Hosting",
+      "Shop Establishment",
+      "Logo Design",
+      "Other Stationery",
+      "Dedicated Support & Fast Process",
+    ],
   },
 ];
 
@@ -290,23 +394,41 @@ export const socialLinks = [
 
 
 
+// export const mediaMentions = [
+//   {
+//     name: "Dailyhunt",
+//     caption: "Coverage on how small businesses across India are simplifying GST and compliance online.",
+//   },
+//   {
+//     name: "Zee News",
+//     caption: "Featured for making business registration accessible to first-time entrepreneurs.",
+//   },
+//   {
+//     name: "Hindustan Times",
+//     caption: "Mentioned in a feature on India's growing digital compliance and legal-tech space.",
+//   },
+//   {
+//     name: "Business Standard",
+//     caption: "Covered as part of a report on MSME registration and tax compliance trends.",
+//   },
+// ];
+
+
 export const mediaMentions = [
   {
     name: "Dailyhunt",
-    caption: "Coverage on how small businesses across India are simplifying GST and compliance online.",
+    caption: "Featured for simplifying GST and compliance.",
   },
   {
     name: "Zee News",
-    caption: "Featured for making business registration accessible to first-time entrepreneurs.",
+    caption: "Featured for accessible business registration.",
   },
   {
     name: "Hindustan Times",
-    caption: "Mentioned in a feature on India's growing digital compliance and legal-tech space.",
+    caption: "Mentioned in India's digital compliance space.",
   },
   {
     name: "Business Standard",
-    caption: "Covered as part of a report on MSME registration and tax compliance trends.",
+    caption: "Covered for MSME and tax compliance trends.",
   },
 ];
-
-

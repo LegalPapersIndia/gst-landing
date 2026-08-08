@@ -16,6 +16,8 @@ import FinalCTA from "./components/FinalCTA";
 import Footer from "./components/Footer";
 import StickyMobileCTA from "./components/StickyMobileCTA";
 import WhatsAppButton from "./components/WhatsAppButton";
+import WhyUs from "./components/WhyUs";
+import DocumentsRequired from "./components/DocumentsRequired";
 
 export default function App() {
   return (
@@ -28,7 +30,8 @@ export default function App() {
       <Services />
       <Pricing />
       <ProcessSteps />
-      <WhyUsAndDocuments />
+      <WhyUs />
+      <DocumentsRequired />
       <InTheNews />
       <FAQ />
       <AppPromo />

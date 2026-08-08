@@ -85,7 +85,8 @@
 
 import { motion } from "framer-motion";
 import LeadForm from "./LeadForm";
-import ctaImage from "../assets/finalcta.png";
+// import ctaImage from "../assets/finalcta.png";
+import ctaImage from "../assets/cta.png";
 
 export default function FinalCTA() {
   return (

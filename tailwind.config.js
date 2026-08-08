@@ -196,7 +196,7 @@ export default {
         body: ["Roboto", "sans-serif"],
         mono: ["IBM Plex Mono", "monospace"],
       },
-      keyframes: {
+     keyframes: {
         stampIn: {
           "0%": { transform: "scale(2.2) rotate(-18deg)", opacity: "0" },
           "60%": { transform: "scale(0.92) rotate(-10deg)", opacity: "1" },
@@ -206,10 +206,15 @@ export default {
           "0%": { transform: "translateY(16px)", opacity: "0" },
           "100%": { transform: "translateY(0)", opacity: "1" },
         },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-14px)" },
+        },
       },
       animation: {
         stamp: "stampIn 0.5s cubic-bezier(.2,1.4,.4,1) forwards",
         rise: "rise 0.6s ease forwards",
+        float: "float 3.5s ease-in-out infinite",
       },
     },
   },
