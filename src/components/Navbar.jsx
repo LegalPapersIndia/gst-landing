@@ -27,14 +27,14 @@ export default function Navbar() {
           </div>
         </div>
 
-        <a
+        {/* <a
           href="tel:+919211037448"
           className="ml-3 flex shrink-0 items-center gap-2 rounded-full border border-navy-600/40 px-3 py-2 text-xs font-medium text-navy-600 transition hover:bg-navy-600/10 sm:px-4"
         >
           <Phone className="h-3.5 w-3.5" />
           <span className="hidden sm:inline">+91 92110 37448</span>
           <span className="sm:hidden">Call now</span>
-        </a>
+        </a> */}
       </div>
     </header>
   );
