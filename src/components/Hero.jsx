@@ -1361,7 +1361,7 @@ export default function Hero() {
                 text-slate-600
               "
             >
-              4.8 rated · 2,000+ businesses
+              4.9 rated · 2,000+ businesses
             </span>
           </motion.div>
         </div>
