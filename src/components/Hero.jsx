@@ -1224,7 +1224,7 @@ export default function Hero() {
               font-extrabold
               leading-[1.08]
               tracking-tight
-              text-[#102a4c]
+              text-[#126dc4]
 
               sm:text-5xl
 
@@ -1234,7 +1234,7 @@ export default function Hero() {
             Get GST Registration
             <br />
             in just{" "}
-            <span className="relative inline-block italic text-[#126dc4]">
+            <span className="relative inline-block italic text-orange-500">
               one day.
               {/* Underline */}
               <svg
