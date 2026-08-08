@@ -264,12 +264,12 @@ export default function Reviews() {
   return (
     <section id="reviews" className="bg-white">
       <div className="mx-auto max-w-6xl px-5 py-20">
-        <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
+        {/* <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
           Trusted, publicly
-        </p>
+        </p> */}
 
         <h2 className="mt-4 font-display text-3xl font-bold leading-tight text-black sm:text-4xl">
-          Ratings from clients, not from us
+          Ratings from clients
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-3">

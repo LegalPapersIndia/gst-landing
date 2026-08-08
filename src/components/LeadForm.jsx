@@ -432,7 +432,7 @@ export default function LeadForm({ variant = "card" }) {
     >
       {variant === "card" && (
         <div className="mb-5">
-          <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">Free consultation</p>
+          {/* <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">Free consultation</p> */}
           <p className="font-display text-2xl font-bold text-black">Start your GST registration</p>
         </div>
       )}
