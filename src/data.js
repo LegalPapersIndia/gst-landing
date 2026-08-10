@@ -158,62 +158,28 @@ export const businessTypes = [
 export const pricingPlans = [
   {
     name: "Basic",
-
-    desc: "For new business idea with low investment.",
-
-    originalPrice: "1,999",
+    desc: "For new businesses looking to get started without a big investment.",
+    originalPrice: 1999,
     discount: "50% off",
-    price: "999",
-
-    govtFee: "+ Govt. Fee (to be paid later)",
-
-    lowPriceTitle: "Lowest Cost first time ever",
-    lowPriceDesc:
-      "We offer competitive professional fees without compromising on quality",
-
-    instantTitle: "Instant 999 less",
-    instantDesc:
-      "Available for 24 hours to do fast checkout process and unlock your offer.",
-
+    price: 999,
+    instantOff: 999,
     emi: false,
-
     highlight: false,
-
-    featuresTitle: "What you'll get",
-
     features: [
       "GST Application Draft in 1 Day",
       "Dedicated Advisor for GST",
       "Free GST Billing Software",
     ],
   },
-
   {
     name: "Standard",
-
-    desc:
-      "Perfact for Startup and scale and stress free from GST Returns compliances and updates.",
-
-    originalPrice: "11,999",
+    desc: "Perfect for startups that want stress-free GST compliance.",
+    originalPrice: 11999,
     discount: "50% off",
-    price: "5,999",
-
-    govtFee: "+ Govt. Fee (to be paid later)",
-
-    lowPriceTitle: "Lowest Cost first time ever",
-    lowPriceDesc:
-      "We offer competitive professional fees without compromising on quality",
-
-    instantTitle: "Instant 5999 less",
-    instantDesc:
-      "Available for 24 hours to do fast checkout process and unlock your offer.",
-
+    price: 5999,
+    instantOff: 5999,
     emi: false,
-
     highlight: true,
-
-    featuresTitle: "What you'll get",
-
     features: [
       "Inclusive of Basic",
       "MSME (Udyam Certificate)",
@@ -223,34 +189,15 @@ export const pricingPlans = [
       "Free GST Biling Software",
     ],
   },
-
   {
     name: "Premium",
-
-    desc:
-      "Everthing that required to startup your business and scale & expansion with online presence from 1 day.",
-
-    originalPrice: "29,999",
+    desc: "Everything to launch, scale, and grow your business online — from day one.",
+    originalPrice: 29999,
     discount: "50% off",
-    price: "14,999",
-
-    govtFee: "+ Govt. Fee (to be paid later)",
-
-    lowPriceTitle: "Lowest Cost first time ever",
-    lowPriceDesc:
-      "We offer competitive professional fees without compromising on quality",
-
-    instantTitle: "Instant 14999 less",
-    instantDesc:
-      "Available for 24 hours to do fast checkout process and unlock your offer.",
-
+    price: 14999,
+    instantOff: 14999,
     emi: true,
-    emiText: "EMI options available.",
-
     highlight: false,
-
-    featuresTitle: "What you'll get",
-
     features: [
       "Inclusive Of Standard",
       "ISO Certificate",

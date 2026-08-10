@@ -129,6 +129,73 @@
 
 
 
+// import { motion } from "framer-motion";
+// import { mediaMentions } from "../data";
+
+// import logoDailyhunt from "../assets/logo2.png";
+// import logoZeeNews from "../assets/logo3.jpg";
+// import logoHindustanTimes from "../assets/logo4.jpg";
+// import logoBusinessStandard from "../assets/logo4.png";
+
+// const logos = {
+//   Dailyhunt: logoDailyhunt,
+//   "Zee News": logoZeeNews,
+//   "Hindustan Times": logoHindustanTimes,
+//   "Business Standard": logoBusinessStandard,
+// };
+
+// export default function InTheNews() {
+//   return (
+//     <section className="bg-white py-20">
+//       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+//         {/* Heading */}
+//         <div className="flex items-center justify-center gap-4">
+//           <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
+//             In the media
+//           </p>
+
+//           <span className="h-px w-8 bg-navy-900/15" />
+//         </div>
+
+//         <h2 className="mt-4 text-center font-display text-3xl font-bold text-black sm:text-4xl">
+//           As featured in
+//         </h2>
+
+//         {/* Cards */}
+//         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+//           {mediaMentions.map((item, i) => (
+//             <motion.div
+//               key={item.name}
+//               initial={{ opacity: 0, y: 18 }}
+//               whileInView={{ opacity: 1, y: 0 }}
+//               viewport={{ once: true, margin: "-40px" }}
+//               transition={{ duration: 0.45, delay: i * 0.08 }}
+//               className="flex flex-col items-center rounded-2xl border border-navy-900/10 bg-white px-5 py-9 text-center shadow-[0_15px_40px_-25px_rgba(10,20,40,0.3)] transition hover:-translate-y-1 hover:shadow-[0_25px_50px_-25px_rgba(10,20,40,0.35)]"
+//             >
+//               <img
+//                 src={logos[item.name]}
+//                 alt={item.name}
+//                 loading="lazy"
+//                 className="h-20 w-auto max-w-[13rem] object-contain sm:h-24 sm:max-w-[15rem]"
+//               />
+
+//               <p className="mt-5 max-w-[16rem] text-base font-medium leading-relaxed text-black sm:text-lg">
+//   {item.caption}
+// </p>
+//             </motion.div>
+//           ))}
+//         </div>
+
+//         {/* <p className="mt-6 text-center text-sm leading-relaxed text-black">
+//           Placeholder captions — swap in the real headline/publication link
+//           once you have it, and I can make each card clickable.
+//         </p> */}
+//       </div>
+//     </section>
+//   );
+// }
+
+
 import { motion } from "framer-motion";
 import { mediaMentions } from "../data";
 
@@ -146,7 +213,21 @@ const logos = {
 
 export default function InTheNews() {
   return (
-    <section className="bg-white py-20">
+    <section className="relative overflow-hidden bg-white py-20">
+      {/* Shimmer keyframes */}
+      <style>{`
+        @keyframes shimmerSlide {
+          0% { transform: translateX(-120%); }
+          100% { transform: translateX(120%); }
+        }
+        .card-shimmer {
+          animation: shimmerSlide 3.4s ease-in-out infinite;
+        }
+        .group:hover .card-shimmer {
+          animation-duration: 1.5s;
+        }
+      `}</style>
+
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="flex items-center justify-center gap-4">
@@ -170,26 +251,58 @@ export default function InTheNews() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
-              className="flex flex-col items-center rounded-2xl border border-navy-900/10 bg-white px-5 py-9 text-center shadow-[0_15px_40px_-25px_rgba(10,20,40,0.3)] transition hover:-translate-y-1 hover:shadow-[0_25px_50px_-25px_rgba(10,20,40,0.35)]"
+              whileHover={{ y: -6 }}
+              className="
+                group
+                relative
+                flex
+                flex-col
+                items-center
+                overflow-hidden
+                rounded-2xl
+                border
+                border-navy-900/10
+                bg-white
+                px-5
+                py-9
+                text-center
+
+                shadow-[0_8px_16px_-6px_rgba(10,20,40,0.1),0_20px_45px_-20px_rgba(10,20,40,0.3)]
+
+                transition-all
+                duration-500
+
+                hover:border-blue-300
+                hover:shadow-[0_12px_20px_-6px_rgba(37,99,235,0.15),0_28px_55px_-20px_rgba(37,99,235,0.3)]
+              "
             >
+              {/* Halka blue shimmer sweep */}
+              <div
+                className="
+                  card-shimmer
+                  pointer-events-none
+                  absolute
+                  inset-0
+                  bg-gradient-to-r
+                  from-transparent
+                  via-blue-400/10
+                  to-transparent
+                "
+              />
+
               <img
                 src={logos[item.name]}
                 alt={item.name}
                 loading="lazy"
-                className="h-20 w-auto max-w-[13rem] object-contain sm:h-24 sm:max-w-[15rem]"
+                className="relative z-10 h-20 w-auto max-w-[13rem] object-contain sm:h-24 sm:max-w-[15rem]"
               />
 
-              <p className="mt-5 max-w-[16rem] text-base font-medium leading-relaxed text-black sm:text-lg">
-  {item.caption}
-</p>
+              <p className="relative z-10 mt-5 max-w-[16rem] text-base font-medium leading-relaxed text-black sm:text-lg">
+                {item.caption}
+              </p>
             </motion.div>
           ))}
         </div>
-
-        {/* <p className="mt-6 text-center text-sm leading-relaxed text-black">
-          Placeholder captions — swap in the real headline/publication link
-          once you have it, and I can make each card clickable.
-        </p> */}
       </div>
     </section>
   );
