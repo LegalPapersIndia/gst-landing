@@ -1106,6 +1106,8 @@
 // //   );
 // // }
 
+
+
 // import { motion } from "framer-motion";
 // import { CheckCircle2, Star } from "lucide-react";
 // import LeadForm from "./LeadForm";
@@ -1557,6 +1559,10 @@
 //   );
 // }
 
+
+
+
+
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import LeadForm from "./LeadForm";
@@ -1646,6 +1652,7 @@ export default function Hero() {
       {/* ================= MAIN CONTAINER ================= */}
 
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-start gap-8 px-4 pb-16 pt-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:px-5 lg:pb-24 lg:pt-10">
+
         {/* =====================================================
             LEFT — HEADLINE + CONTENT
         ====================================================== */}
@@ -1788,14 +1795,14 @@ export default function Hero() {
             </motion.ul>
 
             {/* Mascot — visible ONLY on mobile/tablet, beside the points list */}
-            {/* Mascot — visible ONLY on mobile/tablet, beside the points list */}
-            <motion.img
-              initial={{ opacity: 0, scale: 0.85 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
-              src={mascot}
-              alt="Legal Papers India advisor"
-              className="
+          {/* Mascot — visible ONLY on mobile/tablet, beside the points list */}
+<motion.img
+  initial={{ opacity: 0, scale: 0.85 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ duration: 0.6, delay: 0.35 }}
+  src={mascot}
+  alt="Legal Papers India advisor"
+  className="
     flex
     w-40
     shrink-0
@@ -1806,16 +1813,16 @@ export default function Hero() {
 
     lg:hidden
   "
-            />
+/>
           </div>
 
           {/* Stat box — replaces old small rating pill */}
-          {/* Stat box — replaces old small rating pill */}
-          <motion.div
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="
+         {/* Stat box — replaces old small rating pill */}
+<motion.div
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5, delay: 0.4 }}
+  className="
     relative
     mt-7
     w-full
@@ -1829,7 +1836,7 @@ export default function Hero() {
 
     sm:py-4
   "
-          >
+>
             {/* animated shimmer sweep */}
             <div
               className="

@@ -231,7 +231,7 @@ export default function InTheNews() {
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="flex items-center justify-center gap-4">
-          <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
+          <p className="text-center font-mono text-0.5xl font-extrabold uppercase tracking-[0.2em] text-gold-500 lg:text-left">
             In the media
           </p>
 
