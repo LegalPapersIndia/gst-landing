@@ -106,11 +106,19 @@ export default function LeadForm({ variant = "card" }) {
       }
     >
       {variant === "card" && (
-        <div className="mb-5">
-          {/* <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">Free consultation</p> */}
-          <p className="font-display text-2xl font-bold text-black">Start your GST registration</p>
-        </div>
-      )}
+  <div className="-mx-6 -mt-6 mb-5 relative overflow-hidden rounded-t-2xl bg-blue-600 px-6 py-3.5">
+    
+    {/* Background shine */}
+    <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500" />
+
+    {/* Decorative glow */}
+    <div className="pointer-events-none absolute -right-8 -top-10 h-28 w-28 rounded-full bg-white/10 blur-2xl" />
+
+    <p className="relative z-10 font-display text-xl font-bold text-white sm:text-2xl">
+      Start your GST registration
+    </p>
+  </div>
+)}
 
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <input
@@ -119,7 +127,7 @@ export default function LeadForm({ variant = "card" }) {
           placeholder="Full name"
           value={form.name}
           onChange={handleChange}
-          className="col-span-1 rounded-lg border border-navy-700/15 bg-paper/60 px-4 py-3 text-base text-ink outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40 sm:col-span-2"
+          className="col-span-1 rounded-lg border border-blue-600/50 bg-paper/60 px-4 py-3 text-base text-ink outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40 sm:col-span-2"
         />
         <input
           type="tel"
@@ -128,7 +136,7 @@ export default function LeadForm({ variant = "card" }) {
           value={form.phone}
           onChange={handleChange}
           maxLength={10}
-          className="rounded-lg border border-navy-700/15 bg-paper/60 px-4 py-3 text-base text-ink outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40"
+          className="rounded-lg border border-blue-600/50 bg-paper/60 px-4 py-3 text-base text-ink outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40"
         />
         <input
           type="email"
@@ -136,7 +144,7 @@ export default function LeadForm({ variant = "card" }) {
           placeholder="Email address"
           value={form.email}
           onChange={handleChange}
-          className="rounded-lg border border-navy-700/15 bg-paper/60 px-4 py-3 text-base text-ink outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40"
+          className="rounded-lg border border-blue-600/50 bg-paper/60 px-4 py-3 text-base text-ink outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40"
         />
 
         {/* custom dropdown — always opens downward, unlike native <select> */}
@@ -145,7 +153,7 @@ export default function LeadForm({ variant = "card" }) {
             type="button"
             onClick={() => !statesLoading && setStateOpen((o) => !o)}
             disabled={statesLoading}
-            className="flex w-full items-center justify-between rounded-lg border border-navy-700/15 bg-paper/60 px-4 py-3 text-left text-base outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40 disabled:text-slate-400"
+            className="flex w-full items-center justify-between rounded-lg border border-blue-600/50 bg-paper/60 px-4 py-3 text-left text-base outline-none transition focus:border-gold-500 focus:ring-2 focus:ring-gold-300/40 disabled:text-slate-400"
           >
             <span className={form.state ? "text-ink" : "text-slate-400"}>
               {statesLoading
