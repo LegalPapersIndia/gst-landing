@@ -93,20 +93,24 @@ export const stats = [
 
 export const faqs = [
   {
-    q: "Who needs GST registration?",
-    a: "Any business with annual turnover above the threshold limit (₹40 lakh for goods, ₹20 lakh for services in most states), and anyone selling on e-commerce platforms or across state lines, regardless of turnover.",
+    q: "1. What is GST registration?",
+    a: "GST registration is the process of enrolling your business under the Goods and Services Tax (GST) system, giving you a valid GSTIN for tax compliance.",
   },
   {
-    q: "How long does GST registration take?",
-    a: "Once your documents are verified, we typically file within 24 hours. The GST portal usually issues the GSTIN within 3–7 working days after that.",
+    q: "2. Who needs to register for GST?",
+    a: "Any business with turnover above ₹40 lakh (goods) or ₹20 lakh (services), or involved in interstate or e-commerce supply, must register for GST.",
   },
   {
-    q: "What if my application gets a query from the department?",
-    a: "Our team responds to any clarification the GST officer raises on your behalf, at no extra charge, until your GSTIN is issued.",
+    q: "3. How long does GST registration take?",
+    a: "Typically, 3–7 working days, depending on document accuracy and verification status on GST.gov.in.",
   },
   {
-    q: "Can I register GST without a commercial office?",
-    a: "Yes — a residential address with a valid proof (electricity bill, rent agreement, or NOC from the owner) is accepted for GST registration.",
+    q: "4. What is the cost of GST registration?",
+    a: "The government charges nothing; Legal Papers India offers affordable professional support with transparent GST registration cost.",
+  },
+  {
+    q: "5. Can I apply for GST myself?",
+    a: "Yes, via the GST portal, but errors or missing documents may lead to delays. Our experts handle everything for faster approval.",
   },
 ];
 
