@@ -1316,7 +1316,7 @@ const points = [
   "Same Day Process for GST",
 ];
 
-const statText = "10,000+ GST Registration Certificates Issued";
+const statText = "10K+ GST Certificates Issued";
 
 // Typewriter container — types out each character, then reverses (erases) and loops
 const typeContainer = {
