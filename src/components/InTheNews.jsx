@@ -69,7 +69,7 @@ export default function InTheNews() {
         }
       `}</style>
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-[1400px] px-5 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="flex items-center justify-center gap-4">
           <p className="text-center font-mono text-0.5xl font-extrabold uppercase tracking-[0.2em] text-gold-500 lg:text-left">

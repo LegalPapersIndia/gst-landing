@@ -5,7 +5,7 @@ import { Phone } from "lucide-react";
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-40 border-b border-navy-900/10 bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-5 sm:py-3.5">
+      <div className="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-3 sm:px-5 sm:py-3.5 lg:px-8">
         <div className="min-w-0">
           <div className="flex items-baseline gap-0.5 whitespace-nowrap">
             <span className="font-display text-xl font-bold text-navy-600 sm:text-3xl">

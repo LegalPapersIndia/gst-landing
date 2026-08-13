@@ -17,7 +17,7 @@ export default function FinalCTA() {
         <div className="absolute left-1/2 top-1/2 h-96 w-96 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold-500/5 blur-3xl" />
       </div>
 
-      <div className="relative mx-auto max-w-6xl px-5">
+     <div className="relative mx-auto max-w-[1400px] px-5 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:gap-14 xl:gap-20">
           {/* ================= LEFT - IMAGE + CONTENT ================= */}
           <div className="order-1 flex flex-col">

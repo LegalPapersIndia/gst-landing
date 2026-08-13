@@ -613,7 +613,7 @@ export default function WhoNeedsGst() {
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-blue-500/5 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-gold-500/5 blur-3xl" />
 
-      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+    <div className="mx-auto max-w-[1400px] px-5 sm:px-6 lg:px-8">
         <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
 
           {/* =======================================================

@@ -22,7 +22,7 @@ const docIcons = [
 export default function DocumentsRequired() {
   return (
     <section className="border-t border-navy-900/5 bg-white">
-      <div className="mx-auto max-w-6xl px-5 py-20">
+      <div className="mx-auto max-w-[1400px] px-5 py-20 lg:px-8">
 
         {/* Heading - Same position */}
         <div className="flex items-center gap-2">

@@ -271,7 +271,7 @@ export default function Pricing() {
       <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-blue-500/5 blur-3xl" />
       <div className="pointer-events-none absolute -right-40 bottom-0 h-80 w-80 rounded-full bg-gold-500/5 blur-3xl" />
 
-      <div className="relative mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+     <div className="relative mx-auto max-w-[1400px] px-5 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

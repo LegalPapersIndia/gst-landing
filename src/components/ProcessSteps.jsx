@@ -20,7 +20,7 @@ const stepIcons = [
 export default function ProcessSteps() {
   return (
     <section className="border-t border-navy-900/5 bg-white">
-      <div className="mx-auto max-w-6xl px-5 py-20">
+     <div className="mx-auto max-w-[1400px] px-5 py-20 lg:px-8">
 
         <div>
           <p className="font-mono text-sm font-bold uppercase tracking-[0.2em] text-gold-600">
