@@ -1,6 +1,12 @@
 
 // import { motion } from "framer-motion";
-// import { CheckCircle2, BadgeCheck } from "lucide-react";
+// import {
+//   CheckCircle2,
+//   BadgeCheck,
+//   ShieldCheck,
+//   Clock3,
+//   Headset,
+// } from "lucide-react";
 // import LeadForm from "./LeadForm";
 // import mascot from "../assets/hero-gst-form (3).png";
 
@@ -14,6 +20,12 @@
 // ];
 
 // const statText = "10K+ GST Certificates Issued";
+
+// const trustBadges = [
+//   { icon: ShieldCheck, label: "100% Secure Process" },
+//   { icon: Clock3, label: "Fast Turnaround" },
+//   { icon: Headset, label: "Dedicated Expert Support" },
+// ];
 
 // // Typewriter container — types out each character, then reverses (erases) and loops
 // const typeContainer = {
@@ -44,6 +56,13 @@
 //         }
 //         .animate-shimmer-slide {
 //           animation: shimmerSlide 2.6s ease-in-out infinite;
+//         }
+//         @keyframes statGlowPulse {
+//           0%, 100% { box-shadow: 0 0 0 0 rgba(217,164,6,0.45); }
+//           50% { box-shadow: 0 0 0 10px rgba(217,164,6,0); }
+//         }
+//         .stat-glow-pulse {
+//           animation: statGlowPulse 2.4s ease-in-out infinite;
 //         }
 //       `}</style>
 
@@ -108,7 +127,6 @@
 //       {/* ================= MAIN CONTAINER ================= */}
 
 //       <div className="relative mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-8 px-4 pb-16 pt-8 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:gap-6 lg:px-8 lg:pb-14 lg:pt-8">
-
 //         {/* =====================================================
 //             LEFT — HEADLINE + CONTENT
 //         ====================================================== */}
@@ -204,21 +222,21 @@
 
 //           {/* Mascot — visible ONLY on mobile/tablet, right below the description */}
 //           {/* Mascot — visible ONLY on mobile/tablet, right below the description */}
-// <motion.div
-//   initial={{ opacity: 0, scale: 0.85 }}
-//   animate={{ opacity: 1, scale: 1 }}
-//   transition={{ duration: 0.6, delay: 0.25 }}
-//   className="
+//           <motion.div
+//             initial={{ opacity: 0, scale: 0.85 }}
+//             animate={{ opacity: 1, scale: 1 }}
+//             transition={{ duration: 0.6, delay: 0.25 }}
+//             className="
 //     mt-5
 //     flex
 //     justify-center
 //     lg:hidden
 //   "
-// >
-//   <img
-//     src={mascot}
-//     alt="Legal Papers India advisor"
-//     className="
+//           >
+//             <img
+//               src={mascot}
+//               alt="Legal Papers India advisor"
+//               className="
 //       w-96
 //       object-contain
 //       drop-shadow-[0_12px_20px_rgba(30,70,120,0.20)]
@@ -226,8 +244,8 @@
 //       sm:w-[28rem]
 //       md:w-[30rem]
 //     "
-//   />
-// </motion.div>
+//             />
+//           </motion.div>
 
 //           {/* Points list — 3-column grid on mobile AND desktop */}
 //           <motion.ul
@@ -279,23 +297,23 @@
 //             animate={{ opacity: 1, y: 0 }}
 //             transition={{ duration: 0.5, delay: 0.4 }}
 //             className="
+//               stat-glow-pulse
 //               relative
 //               mt-7
 //               w-full
+//               max-w-lg
 //               overflow-hidden
 //               rounded-2xl
 //               bg-gradient-to-r
 //               from-[#D4AF37] to-[#F5D76E]
-//               px-5
-//               py-3
+//               px-4
+//               py-1
 
 //               shadow-[0_15px_30px_-10px_rgba(217,164,6,0.45)]
 
-//               sm:py-4
+//               sm:py-2.5
 //             "
 //           >
-//             {/* Ping pulse ring — same style as the WhatsApp button */}
-//             <span className="pointer-events-none absolute inset-0 z-0 animate-ping rounded-2xl bg-[#F5D76E] opacity-40" />
 //             {/* animated shimmer sweep */}
 //             <div
 //               className="
@@ -364,6 +382,81 @@
 //                 />
 //               </motion.p>
 //             </div>
+//           </motion.div>
+
+//           {/* Trust badges row — DESKTOP ONLY, fills empty space below stat box */}
+//           <motion.div
+//             initial={{ opacity: 0, y: 14 }}
+//             animate={{ opacity: 1, y: 0 }}
+//             transition={{ duration: 0.5, delay: 0.55 }}
+//             className="
+//               mt-8
+//               hidden
+//               max-w-lg
+//               grid-cols-3
+//               gap-4
+
+//               lg:grid
+//             "
+//           >
+//             {trustBadges.map(({ icon: Icon, label }) => (
+//               <motion.div
+//                 key={label}
+//                 whileHover={{ y: -4 }}
+//                 className="
+//                   group
+//                   flex
+//                   flex-col
+//                   items-center
+//                   gap-2.5
+//                   rounded-2xl
+//                   border
+//                   border-[#126dc4]/20
+//                   bg-blue-600
+//                   px-3
+//                   py-4
+//                   text-center
+//                   shadow-[0_10px_20px_-10px_rgba(18,109,196,0.4)]
+//                   transition-all
+//                   duration-300
+
+//                   hover:bg-white
+//                   hover:shadow-[0_16px_30px_-10px_rgba(18,109,196,0.35)]
+//                 "
+//               >
+//                 <span
+//                   className="
+//                     flex
+//                     h-10
+//                     w-10
+//                     items-center
+//                     justify-center
+//                     rounded-full
+//                     bg-white/20
+//                     transition-colors
+//                     duration-300
+
+//                     group-hover:bg-[#126dc4]/10
+//                   "
+//                 >
+//                   <Icon className="h-5 w-5 text-white transition-colors duration-300 group-hover:text-[#126dc4]" />
+//                 </span>
+//                 <span
+//                   className="
+//                     text-xs
+//                     font-bold
+//                     leading-tight
+//                     text-white
+//                     transition-colors
+//                     duration-300
+
+//                     group-hover:text-[#173252]
+//                   "
+//                 >
+//                   {label}
+//                 </span>
+//               </motion.div>
+//             ))}
 //           </motion.div>
 //         </div>
 
@@ -492,16 +585,18 @@
 // }
 
 
+
+
+
+
+
 import { motion } from "framer-motion";
-import {
-  CheckCircle2,
-  BadgeCheck,
-  ShieldCheck,
-  Clock3,
-  Headset,
-} from "lucide-react";
+import { CheckCircle2, BadgeCheck } from "lucide-react";
 import LeadForm from "./LeadForm";
 import mascot from "../assets/hero-gst-form (3).png";
+import secureIcon from "../assets/card.png";
+import speedIcon from "../assets/card2.png";
+import supportIcon from "../assets/card3.png";
 
 const points = [
   "1 Day GST Application",
@@ -512,12 +607,12 @@ const points = [
   "Same Day Process for GST",
 ];
 
-const statText = "10K+ GST Certificates Issued";
+const statText = "25K+ GST Certificates Issued";
 
 const trustBadges = [
-  { icon: ShieldCheck, label: "100% Secure Process" },
-  { icon: Clock3, label: "Fast Turnaround" },
-  { icon: Headset, label: "Dedicated Expert Support" },
+  { image: secureIcon, label: "100% Secure Process" },
+  { image: speedIcon, label: "Fast Turnaround" },
+  { image: supportIcon, label: "Dedicated Expert Support" },
 ];
 
 // Typewriter container — types out each character, then reverses (erases) and loops
@@ -551,8 +646,8 @@ export default function Hero() {
           animation: shimmerSlide 2.6s ease-in-out infinite;
         }
         @keyframes statGlowPulse {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(217,164,6,0.45); }
-          50% { box-shadow: 0 0 0 10px rgba(217,164,6,0); }
+          0%, 100% { box-shadow: 0 0 0 0 rgba(37,99,235,0.45); }
+          50% { box-shadow: 0 0 0 10px rgba(37,99,235,0); }
         }
         .stat-glow-pulse {
           animation: statGlowPulse 2.4s ease-in-out infinite;
@@ -892,7 +987,7 @@ export default function Hero() {
               lg:grid
             "
           >
-            {trustBadges.map(({ icon: Icon, label }) => (
+            {trustBadges.map(({ image, label }) => (
               <motion.div
                 key={label}
                 whileHover={{ y: -4 }}
@@ -904,24 +999,24 @@ export default function Hero() {
                   gap-2.5
                   rounded-2xl
                   border
-                  border-[#126dc4]/20
-                  bg-blue-600
+                  border-blue-300/40
+                  bg-blue-400
                   px-3
                   py-4
                   text-center
-                  shadow-[0_10px_20px_-10px_rgba(18,109,196,0.4)]
+                  shadow-[0_10px_20px_-10px_rgba(96,165,250,0.4)]
                   transition-all
                   duration-300
 
                   hover:bg-white
-                  hover:shadow-[0_16px_30px_-10px_rgba(18,109,196,0.35)]
+                  hover:shadow-[0_16px_30px_-10px_rgba(96,165,250,0.35)]
                 "
               >
-                <span
+              <span
                   className="
                     flex
-                    h-10
-                    w-10
+                    h-18
+                    w-18
                     items-center
                     justify-center
                     rounded-full
@@ -929,10 +1024,14 @@ export default function Hero() {
                     transition-colors
                     duration-300
 
-                    group-hover:bg-[#126dc4]/10
+                    group-hover:bg-blue-400/10
                   "
                 >
-                  <Icon className="h-5 w-5 text-white transition-colors duration-300 group-hover:text-[#126dc4]" />
+                  <img
+                    src={image}
+                    alt={label}
+                    className="h-14 w-14 object-contain"
+                  />
                 </span>
                 <span
                   className="
